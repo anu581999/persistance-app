@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="@drawable/img_2"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header"
+        android:fontFamily="sans-serif-black"
+        android:labelFor="@+id/Number1"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        >
+    </TextView>
+
+    <View
+        android:id="@+id/colorView"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="20dp"
+        android:background="@drawable/track"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/firstSwitch"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:checked="false"
+            android:thumb="@drawable/thumbnail"
+            app:track="@drawable/track"
+            tools:ignore="VisualLintBounds,VisualLintButtonSize" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="2"
+            android:progressTint="@color/red"
+            android:thumbTint="@color/red"
+            android:max="255"/>
+
+        <TextView
+            android:id="@+id/number1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:maxLength="4"
+            android:text="0.0"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch2"
+            android:layout_width="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:layout_marginStart="30dp"
+            android:thumb="@drawable/thumbnail"
+            app:track="@drawable/track2"
+            tools:ignore="VisualLintBounds,VisualLintButtonSize" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="2"
+            android:progressTint="@color/green"
+            android:thumbTint="@color/green"
+            android:max="255"/>
+
+        <TextView
+            android:id="@+id/number2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="15sp"
+            android:maxLength="4"
+            android:gravity="center"
+            android:text="0.0"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch3"
+            android:layout_width="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:layout_marginStart="30dp"
+            android:thumb="@drawable/thumbnail"
+            app:track="@drawable/track3"
+            tools:ignore="VisualLintBounds,VisualLintButtonSize" />
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="2"
+            android:progressTint="@color/blue"
+            android:thumbTint="@color/blue"
+            android:max="255" />
+
+        <TextView
+            android:id="@+id/number3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="15sp"
+            android:text="0.0"
+            android:maxLength="4"
+            android:gravity="center"
+            tools:ignore="HardcodedText,InvalidId" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/softBlack"
+        android:text="@string/resetButton"
+        android:textColor="#8C9EFF"
+        tools:ignore="TextSizeCheck" />
+
+
+</LinearLayout>
+
+
+
